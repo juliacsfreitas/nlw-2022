@@ -14,8 +14,7 @@
   --brand-light: hsl(148, 23%, 89%);
   font-size: 62.5%; /* 1rem = 10px */
 
-  --nav-heigth:7.2 rem;
-    
+  --nav-heigth: 7.2 rem;
 }
 
 body {
@@ -25,24 +24,21 @@ body {
   text-align: center;
 }
 
-.wrapper{
+.wrapper {
   width: 37.5rem;
   margin-inline: auto;
+  padding-inline: 2.4rem;
 }
-
 
 /*HEADER======================*/
 
 header {
- 
   margin-top: calc(4.1rem + var(--nav-height));
-
-
-
+}
 header:before {
   content: '';
   width: 100vw;
-  height: 108rem;
+  height: calc(108 rem + var(--nav-height)) 108rem;
   background-color: var(--brand-light);
   display: block;
 
